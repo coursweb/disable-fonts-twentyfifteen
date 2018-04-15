@@ -15,8 +15,8 @@ Author URI: https://github.com/ms-studio
  */
 function coursweb_disable_fontstyles_twentyfifteen() {
 
-	wp_dequeue_style( 'deppo-font-enqueue' );
+	wp_dequeue_style( 'twentyfifteen-fonts' );
 
 }
-add_action( 'wp_enqueue_scripts', 'coursweb_disable_fontstyles_twentyfifteen' );
+add_action( 'wp_enqueue_scripts', 'coursweb_disable_fontstyles_twentyfifteen', 11 );
 
